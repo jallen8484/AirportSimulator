@@ -1,13 +1,13 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airportSimulator.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Model;
+package airportSimulator.model;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -16,7 +16,9 @@ import java.util.LinkedList;
 // TODO: Auto-generated Javadoc
 /**
  * The Enum Airline.
- */
+  * @author Jeremy Allen
+ * @version 3.0
+*/
 public enum Airline {
 
 	/** The AAL. */

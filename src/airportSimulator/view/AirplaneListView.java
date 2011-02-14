@@ -1,25 +1,27 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.View
+ * @package airportSimulator.view
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.View;
+package airportSimulator.view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.WindowConstants;
 
-import AirportSimulator.Controller.*;
-import AirportSimulator.Model.*;
+import airportSimulator.controller.*;
+import airportSimulator.model.*;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class AirplaneListView.
+ * @author Joshua Charles
+ * @version 3.0
  */
 @SuppressWarnings("serial")
 public class AirplaneListView extends JFrameView {

@@ -1,14 +1,24 @@
-package airport.app;
+/**
+ * @project AirportSimulator
+ * @package airportSimulator.app
+ * @author Brian Bagley
+ * @author David Cook
+ * @author Jeremy Allen
+ * @author Joshua Charles
+ * @version 3.0
+ */
+package airportSimulator.app;
 
 /**
- * Hello world!
- *
+ * @author Jeremy Allen
+ * @version 3.0
  */
 public interface App {
     
 	
 	
-	public void main( String[] args );
-    public void update();
-    
-    }
+	/**
+	 * @param args
+	 */
+	void main( String[] args );
+   }

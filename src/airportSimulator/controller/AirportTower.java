@@ -7,14 +7,17 @@
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Controller;
+package airportSimulator.controller;
 
-import AirportSimulator.Model.*;
-import AirportSimulator.View.*;
+import airportSimulator.model.*;
+import airportSimulator.view.*;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class AirportTower.
+ * @author Joshua Charles
+ * @author Jeremy Allen
+ * @version 3.0
  */
 public final class AirportTower extends AbstractController {
 

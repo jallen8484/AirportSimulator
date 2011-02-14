@@ -7,14 +7,16 @@
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Controller;
+package airportSimulator.controller;
 
-import AirportSimulator.Model.Model;
-import AirportSimulator.View.View;
+import airportSimulator.model.Model;
+import airportSimulator.view.View;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Interface Controller.
+ * @author Joshua Charles
+ * @version 3.0
  */
 public interface Controller {
 

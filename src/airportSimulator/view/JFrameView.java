@@ -1,24 +1,24 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.View
+ * @package airportSimulator.view
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.View;
+package airportSimulator.view;
 
 import javax.swing.JFrame;
 
-import AirportSimulator.Controller.Controller;
-import AirportSimulator.Model.AbstractModel;
-import AirportSimulator.Model.Model;
-import AirportSimulator.Model.ModelListener;
+import airportSimulator.controller.Controller;
+import airportSimulator.model.*;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class JFrameView.
+ * @author Joshua Charles
+ * @version 3.0
  */
 
 public abstract class JFrameView extends JFrame implements View, ModelListener {

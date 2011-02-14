@@ -1,21 +1,23 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airportSimulator.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Model;
+package airportSimulator.model;
 
 import java.util.*;
 
-import AirportSimulator.Model.FuelTank.TankSize;
+import airportSimulator.model.FuelTank.TankSize;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class AirportModel.
+ * @author Jeremy Allen
+ * @version 3.0
  */
 public class AirportModel extends AbstractModel {
 
@@ -117,23 +119,24 @@ public class AirportModel extends AbstractModel {
 		}
 	}
 
-	// All Vehicle Containers
 
-	/*
-	 * //Airspaces create planes and wait for HoldingPattern private Airspace
-	 * entering, exiting; //HoldingPatterns move planes up the queue between
-	 * Airspaces and Runways private HoldingPattern arrivals, departures;
-	 * //Runways require Clearance to move planes between air and ground
-	 * VehicleContainers // denies clearance to additional planes for a time
-	 * during and after use private Runways rwA, rwB; //Taxiways moves planes
-	 * between runways, gates, and hangars private Taxiways tw1, tw2, tw3, tw4,
-	 * tw5; //Hangars accept planes garage and refuel all AirportVehicle
-	 * depending on size of Vehicle and capacity of Hangar private Hangars hgS1,
-	 * hgS2, hgS3, hgM1, hgM2, hgM3, hgL1, hgL2, hgL3; //Gates block planes
-	 * while loading/unloading passengers/cargo // limited refueling under
-	 * FuelLevel.EMERGENCY private Gates gt1A, gt2A, gt3A, gt1B, gt2B, gt3B,
-	 * gt1C, gt2C, gt3C;
-	 */
+	/**	TODO: IMPLEMENT AIRSPACES, HOLDINGPATTERNS, RUNWAYS, TAXIWAYS, HANGARS, GATES as VehicleContainer(LinkedList<Vehicle>)
+	* // All Vehicle Containers
+	* //Airspaces create planes and wait for HoldingPattern
+	* private Airspace entering, exiting;
+	* //HoldingPatterns move planes up the queue between Airspaces and Runways
+	* private HoldingPattern arrivals, departures;
+	* //Runways require Clearance to move planes between air and ground VehicleContainers
+	* // denies clearance to additional planes for a time during and after use
+	* private Runways rwA, rwB;
+	* //Taxiways moves planes between runways, gates, and hangars
+	* private Taxiways tw1, tw2, tw3, tw4, tw5;
+	* //Hangars accept planes garage and refuel all AirportVehicle depending on size of Vehicle and capacity of Hangar
+	* private Hangars hgS1, hgS2, hgS3, hgM1, hgM2, hgM3, hgL1, hgL2, hgL3;
+	* //Gates block planes while loading/unloading passengers/cargo
+	* // limited refueling under FuelLevel.EMERGENCY
+	* private Gates gt1A, gt2A, gt3A, gt1B, gt2B, gt3B, gt1C, gt2C, gt3C;
+	*/
 
 	/**
 	 * The Enum State.

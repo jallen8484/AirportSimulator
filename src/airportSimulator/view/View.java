@@ -1,20 +1,22 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.View
+ * @package airportSimulator.view
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.View;
+package airportSimulator.view;
 
-import AirportSimulator.Controller.Controller;
-import AirportSimulator.Model.Model;
+import airportSimulator.controller.Controller;
+import airportSimulator.model.Model;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Interface View.
+ * @author Joshua Charles
+ * @version 3.0
  */
 public interface View {
 

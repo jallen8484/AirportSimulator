@@ -1,19 +1,21 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airportSimulator.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Model;
+package airportSimulator.model;
 
 import java.awt.event.ActionEvent;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class ModelEvent.
+ * @author Charles Joshua
+ * @version 3.0
  */
 public class ModelEvent extends ActionEvent {
 

@@ -1,21 +1,23 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airportSimulator.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Model;
+package airportSimulator.model;
 
 import java.util.LinkedList;
 
-import AirportSimulator.Model.VehicleState.Category;
+import airportSimulator.model.VehicleState.Category;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Interface State.
+ * @author Jeremy Allen
+ * @version 3.0
  */
 public interface State {
 

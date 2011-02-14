@@ -1,17 +1,20 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airportSimulator.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Model;
+package airportSimulator.model;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class Airplane.
+ * @author Joshua Charles
+ * @author Jeremy Allen
+ * @version 3.0
  */
 public class Airplane extends AirportVehicle {
 
@@ -124,8 +127,9 @@ public class Airplane extends AirportVehicle {
 
 	/**
 	 * Refuel.
-	 *
-	 * @param fl the fl
+	 * 
+	 * @param fl
+	 *            the fl
 	 */
 	public void refuel(FuelLevel fl) {
 		// TODO Auto-generated method stub

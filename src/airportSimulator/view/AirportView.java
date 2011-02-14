@@ -1,13 +1,13 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.View
+ * @package airportSimulator.view
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.View;
+package airportSimulator.view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,15 +16,18 @@ import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import AirportSimulator.Controller.AirportTower;
-import AirportSimulator.Model.*;
+import airportSimulator.app.App;
+import airportSimulator.controller.AirportTower;
+import airportSimulator.model.*;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class AirportSimulatorView.
+ * The Class AirportView.
+ * @author Jeremy Allen
+ * @version 3.0
  */
 
-public class AirportView extends JFrameView {
+public class AirportView extends JFrameView implements App {
 
 	/**
 	 * The Class Handler.
@@ -478,7 +481,7 @@ public class AirportView extends JFrameView {
 	 * @param args
 	 *            the arguments
 	 */
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		new AirportTower(args);
 	}
 

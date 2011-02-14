@@ -1,17 +1,19 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airportSimulator.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Model;
+package airportSimulator.model;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class FuelTankException.
+ * @author Jeremy Allen
+ * @version 3.0
  */
 public class FuelTankException extends Exception {
 

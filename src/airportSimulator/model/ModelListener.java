@@ -1,13 +1,13 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airportSimulator.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
  * @version 3.0
  */
-package AirportSimulator.Model;
+package airportSimulator.model;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -19,6 +19,8 @@ package AirportSimulator.Model;
  * method is invoked.
  * 
  * @see ModelEvent
+ * @author Joshua Charles
+ * @version 3.0
  */
 public interface ModelListener {
 
