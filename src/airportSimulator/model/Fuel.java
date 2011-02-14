@@ -11,7 +11,8 @@ package airportSimulator.model;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class Fuel. Example use:
+ * The Class Fuel.
+ *
  * @author Jeremy Allen
  * @version 3.0
  */
