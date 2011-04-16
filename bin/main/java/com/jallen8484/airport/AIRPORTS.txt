@@ -1,0 +1,40 @@
+Name, City, ST, IATA, International/Regional/Municipal
+Austin-Bergstrom International Airport, Del Valle, TX, AUS, I
+Hartsfield–Jackson Atlanta International Airport, Colleg Park, GA, ATL, I
+Baltimore/Washington International Thurgood Marshall Airport, Hanover, Maryland, BWI, I
+General Edward Lawrence Logan International Airport, East Boston, MA, BOS, I
+Branson Airport, Hollister, MO, BKG, R
+Cancún International Airport, Cancún, MX, CUN, I
+Charlotte/Douglas International Airport, Berryhill, NC, CLT, I
+Chicago Midway International Airport, Garfield Ridge, IL, MDW, I
+Chicago O'Hare International Airport, O'Hare, IL - ORD, I
+Cincinnati/Northern Kentucky International Airport, Hebron, KY, CVG, I
+Dallas/Fort Worth International Airport, Irving, TX - DFW, I
+Dallas Love Field, Dallas, TX, DAL, R
+Denver International Airport, Denver, CO, DEN, I
+Detroit Metropolitan Wayne County Airport, Romulus, MI, DTW, I
+El Paso International Airport, Chelmont, TX, ELP, I
+Fort Lauderdale – Hollywood International Airport, Ft. Lauderdale, FL, FLL, I
+Rio Grande Valley International Airport, Harlingen, TX, HRL, I
+George Bush Intercontinental Airport, Humble, TX, IAH, I
+William P. Hobby Airport, South Houston, TX, HOU, R
+Kansas City International Airport, Ferrelview, MO, MCI, I
+McCarran International Airport, Paradise, NV, LAS, I
+Long Beach Airport, Long Beach, CA, LGB, R
+Los Angeles International Airport, Inglewood, CA, LAX, I
+Lubbock Preston Smith International Airport, Lubbock, TX, LBB, I
+Memphis International Airport, Memphis, TN, MEM, I
+Minneapolis-Saint Paul International Airport, Fort Snelling, MN, MSP, I
+Nashville International Airport, Nashville, TN, BNA, I
+John F. Kennedy International Airport, Springfield Gardens, NY, JFK, I
+Newark Liberty International Airport, Elizabeth, NJ, EWR, I
+Oakland International Airport, San Leandro, CA, OAK, I
+Orlando International Airport, Southport, FL, MCO, I
+Phoenix Sky Harbor International Airport, Phoenix, AZ, PHX, I
+Salt Lake City International Airport, Salt Lake City, UT, SLC, I
+San Diego International Airport, San Diego, CA, SAN, I
+San Francisco International Airport, San Bruno, CA, SFO, I
+Norman Y. Mineta San Jose International Airport, San Jose, CA, SJC, I
+Seattle–Tacoma International Airport, Seatac, WA, SEA, I
+Tampa International Airport, Tampa, FL, TPA, I
+Washington Dulles International Airport, Dulles, VA, IAD, I
