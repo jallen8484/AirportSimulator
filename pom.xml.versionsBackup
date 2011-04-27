@@ -4,7 +4,7 @@
   <groupId>com.jallen8484.app</groupId>
   <artifactId>AirportSimulator</artifactId>
   <packaging>jar</packaging>
-  <version>3.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>AirportSimulator</name>
   <url>http://maven.apache.org</url>
 <repositories>

@@ -16,7 +16,6 @@ import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import airportSimulator.app.App;
 import airportSimulator.controller.AirportTower;
 import airportSimulator.model.*;
 
@@ -27,7 +26,7 @@ import airportSimulator.model.*;
  * @version 3.0
  */
 
-public class AirportView extends JFrameView implements App {
+public class AirportView extends JFrameView {
 
 	/**
 	 * The Class Handler.
@@ -474,17 +473,6 @@ public class AirportView extends JFrameView implements App {
 		pack();
 
 	}
-
-	/**
-	 * The main method.
-	 * 
-	 * @param args
-	 *            the arguments
-	 */
-	public void main(String[] args) {
-		new AirportTower(args);
-	}
-
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -551,5 +539,16 @@ public class AirportView extends JFrameView implements App {
 		}
 
 	}
+
+	/**
+	 * The main method.
+	 * 
+	 * @param args
+	 *            the arguments
+	 */
+	public static void main(String[] args) {
+		new AirportTower(args);
+	}
+
 
 }
