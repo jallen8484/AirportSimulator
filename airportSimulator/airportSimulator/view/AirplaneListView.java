@@ -17,42 +17,18 @@ import javax.swing.WindowConstants;
 import airportSimulator.controller.*;
 import airportSimulator.model.*;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class AirplaneListView.
+ * AirplaneListView Class
  * @author Joshua Charles
  * @version 3.0
  */
-@SuppressWarnings("serial")
 public class AirplaneListView extends JFrameView {
-
-	/**
-	 * The Class Handler.
-	 */
 	class Handler implements ActionListener {
-
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see
-		 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent
-		 * )
-		 */
-		@Override
 		public void actionPerformed(ActionEvent e) {
-			((AirportTower)getController()).operation(e.getActionCommand());
+			// ((airportTower)getController()).SimulatorOperation(e.getActionCommand());
 		}
 	}
 
-	/**
-	 * Instantiates a new airplane list view.
-	 * 
-	 * @param model
-	 *            the model
-	 * @param controller
-	 *            the controller
-	 */
-	@SuppressWarnings("unused")
 	public AirplaneListView(AirportModel model, AirportTower controller) {
 		super(model, controller);
 
@@ -68,14 +44,6 @@ public class AirplaneListView extends JFrameView {
 		pack();
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * AirportSimulator.Model.ModelListener#modelChanged(AirportSimulator.Model
-	 * .ModelEvent)
-	 */
-	@Override
 	public void modelChanged(ModelEvent event) {
 
 	}
