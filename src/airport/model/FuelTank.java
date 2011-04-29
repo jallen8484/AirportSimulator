@@ -135,7 +135,7 @@ public class FuelTank {
 	 * @return true, if successful
 	 */
 	public boolean emergency() {
-		return (isEmpty() || this.getLevel().equals(FuelLevel.EMERGENCY));
+		return (isEmpty() || this.getLevel().equals(FuelLevel.DANGER) || this.getLevel().equals(FuelLevel.EMERGENCY));
 	}
 
 	/**
@@ -205,7 +205,7 @@ public class FuelTank {
 	 * @throws FuelTankException
 	 *             the fuel tank exception
 	 */
-	public void fill(FuelTank ft) throws FuelTankException {
+	public synchronized void fill(FuelTank ft) throws FuelTankException {
 		// this gets the added fuel from f
 		// f's is decremented until this is full or max
 		while (!this.isFull() && !ft.isEmpty()) {
