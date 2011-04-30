@@ -1,6 +1,9 @@
 This is a merge of Version 3.1 from github and my Version 4.0
 
 
+4-30-2011 : 12:00am : Josh Charles
+	Added a zip file and updated uml diagram
+
 4-30-2011 : 11:15am : Josh Charles
 	Added my class diagram to the project and updated
 
