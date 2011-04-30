@@ -72,12 +72,7 @@ public class AirportSimulatorModel extends AbstractModel
     	Iterator<Airplane> it = listAirplanes.iterator();
     	while (it.hasNext())
     	{
-    		AirportEvent temp = new AirportEvent(this, "New Plane");
-			//if (temp.getTank().emergency()) queueAirportEvent.addFirst(new AirportEvent(temp, "New Emergency"));
-			//else queueAirportEvent.addLast(new AirportEvent(temp, "New Plane"));
-    		temp.eventtype = 0;
-    		temp.ap = it.next();
-    		queueAirportEvent.addLast(temp);
+    		queueAirportEvent.addLast(new AirportEvent(it.next(),0/**(eventtype)*/, "New Plane"));
     	}
 
     	// event queue should now hold all of the generated airplanes as arrival events

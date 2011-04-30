@@ -1,39 +1,28 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class AirportEvent.
   * @author Jeremy Allen
-  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
 */
-@SuppressWarnings("serial")
-public class AirportEvent //extends ModelEvent
-{
-	/** The eventtype. */
+public class AirportEvent extends ModelEvent {
+
 	public int eventtype;		// 0 - airplane contacting tower to enter landing pattern
 								// 1 - 
 								// 2 - 
 
-	/** The ap. */
-	public Airplane ap;			// a reference to the airplane this event
-								// is associated with if applicable
 
-	
-	
-	
-//***********************************************	
-// below created and added by Jeremy Allen
-//***********************************************	
-	
+
 	/**
 	 * The Enum Event.
 	 */
@@ -89,6 +78,13 @@ public class AirportEvent //extends ModelEvent
 
 	}
 
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = 7116952084895363025L;
+
+	/** The airplane which created the event. */
+	public Airplane ap;// a reference to the airplane this event is associated with if applicable
+
+
 	/** The msg. */
 	String msg;
 
@@ -97,14 +93,20 @@ public class AirportEvent //extends ModelEvent
 	 * 
 	 * @param ap
 	 *            the ap
+	 * @param e 
 	 * @param msg
 	 *            the msg
 	 */
-	public AirportEvent(Object ap, String msg)
-	{
-//		super(ap, ((Airplane) ap).getId(), msg);
+	public AirportEvent(Object ap, int e, String msg) {
+		super(ap, e, msg);
 		// notifyChanged(((Airplane) ap).id(), Event.getEvent(msg));
+		this.ap = (Airplane) ap;
+		this.eventtype = e;
+		this.msg = msg;
 	}
+
+
+
 
 	/**
 	 * Gets the msg.
@@ -143,8 +145,4 @@ public class AirportEvent //extends ModelEvent
 	public void setPlane(Airplane ap) {
 		this.ap = ap;
 	}
-	
-	
-	
-	
 }

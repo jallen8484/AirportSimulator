@@ -1,43 +1,29 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
 
 import java.awt.event.ActionEvent;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class ModelEvent.
- * @author Jeremy Allen
- * @author Joshua Charles
- * @version 5.0
+ * @author Charles Joshua
+ * @version 3.1
  */
-@SuppressWarnings("serial")
-public class ModelEvent extends ActionEvent
-{
+public class ModelEvent extends ActionEvent {
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = -5013553277600267917L;
+
+	/** The command. */
 	public int command;
-
-
-	
-	
-	
-	
-	
-	
-//***********************************************	
-// below created and added by Jeremy Allen
-//***********************************************
-	
-	
-	
-	
-	/** The amt. */
-	private int amt;
 
 	/** The id. */
 	private int id;
@@ -63,7 +49,7 @@ public class ModelEvent extends ActionEvent
 		this.obj = obj;
 		this.id = id;
 		this.msg = msg;
-		this.amt = 0;
+		this.command = 0;
 	}
 
 	/**
@@ -83,7 +69,7 @@ public class ModelEvent extends ActionEvent
 		this.obj = obj;
 		this.id = id;
 		this.msg = msg;
-		this.amt = amt;
+		this.command = amt;
 	}
 
 	/**
@@ -104,13 +90,14 @@ public class ModelEvent extends ActionEvent
 		super(arg0, arg1, arg2, arg3, arg4);
 	}
 
+
 	/**
 	 * Gets the amount.
 	 * 
 	 * @return the amount
 	 */
 	public int amount() {
-		return amt;
+		return command;
 	}
 
 	/**
@@ -139,8 +126,4 @@ public class ModelEvent extends ActionEvent
 	public Object object() {
 		return obj;
 	}
-	
-	
-	
-	
 }

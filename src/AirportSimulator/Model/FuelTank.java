@@ -1,21 +1,19 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
-
-import java.util.Random;
 
 // TODO: Auto-generated Javadoc
 /**
  * The Class FuelTank.
  * @author Jeremy Allen
- * @version 5.0
+ * @version 3.1
  */
 public class FuelTank {
 
@@ -50,14 +48,13 @@ public class FuelTank {
 
 		/**
 		 * Multi.
+		 * @param m multiplier
 		 * 
-		 * @param i
-		 *            the i
 		 * @return the double
 		 */
-		public double multi(int i) {
+		public double multi(double m) {
 			// TODO Auto-generated method stub
-			return this.size * i;
+			return this.size * m;
 		}
 
 		/**
@@ -136,54 +133,6 @@ public class FuelTank {
 		return (isEmpty() || this.getLevel().equals(FuelLevel.EMERGENCY));
 	}
 
-	/**
-	 * Example.
-	 */
-
-	void example() {
-		double dblReserve = TankSize.RESERVE.size() * 2.0; // RESERVE size is set to
-														// 1600
-		FuelTank largeReserve = new FuelTank(dblReserve);
-		FuelTank tripleReserve = new FuelTank(TankSize.RESERVE.multi(3));
-		FuelTank normalReserve = new FuelTank(TankSize.RESERVE);
-		FuelTank miniTank = new FuelTank(2); // 2 Gallon tank
-		FuelTank fiveGalTank = new FuelTank(5);
-		FuelTank largeFuelTank = new FuelTank(TankSize.LARGE);
-//		Airplane smallPlane = new Airplane(new Random().nextInt(), null,
-//				largeFuelTank, null, null);
-		/*
-		 * All Tanks are empty, you must either fill() or add(Fuel f)
-		 */
-		try {
-			tripleReserve.fill(); // Magically fill tank to capacity
-			largeReserve.fill(tripleReserve); // Fill tank from source
-			normalReserve.fill(tripleReserve);
-		} catch (FuelTankException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			assert (tripleReserve.isEmpty());
-			assert (largeReserve.isFull());
-			assert (normalReserve.isFull());
-		}
-
-		try {
-			largeFuelTank.fill(normalReserve);
-			fiveGalTank.fill(largeFuelTank);
-			miniTank.fill(largeFuelTank);
-//			smallPlane.getTank().fill(largeFuelTank);
-
-		} catch (FuelTankException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			assert (!largeFuelTank.isEmpty());
-			assert (!normalReserve.isEmpty());
-			assert (miniTank.isFull());
-//			assert (smallPlane.getTank().isFull());
-		}
-
-	}
 
 	/**
 	 * Fill.

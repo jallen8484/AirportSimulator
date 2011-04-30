@@ -1,72 +1,74 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Random;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Enum Airline.
- * @author Joshua Charles
- * @author Jeremy Allen
- * @version 5.0
+  * @author Jeremy Allen
+ * @version 3.1
 */
 public enum Airline {
 
-	/** The AAL. */
+	/** American Airlines */
 	AAL("AA", "American Airlines"),
 
-	/** The COA. */
+	/** Continental Airlines */
 	COA("CO", "Continental Airlines"),
 
-	/** The DAL. */
+	/** Delta Air Lines. */
 	DAL("DL", "Delta Air Lines"),
 
-	/** The EGF. */
+	/** American Eagle */
 	EGF("MQ", "American Eagle Airlines"),
 
-	/** The FTT. */
+	/** Frontier Airlines */
 	FTT("F9", "Frontier Airlines"),
 
-	/** The JBU. */
+	/** JetBlue Airways */
 	JBU("B6", "JetBlue Airways"),
 
-	/** The NAO. */
+	/** North American Airlines */
 	NAO("NA", "North American Airlines"),
 
-	/** The NWA. */
+	/** Northwest Airlines */
 	NWA("NW", "Northwest Airlines"),
 
-	/** The SWA. */
+	/** Southwest Airlines */
 	SWA("WN", "Southwest Airlines"),
 
-	/** The UAL. */
+	/** United Airlines */
 	UAL("UA", "United Airlines"),
 
-	/** The USA. */
+	/** US Airways */
 	USA("US", "US Airways"),
 
-	/** The VRD. */
+	/** Virgin America */
 	VRD("VX", "Virgin America");
 
 	/**
-	 * Gets the airline.
+	 * Gets the airline by IATA code.
 	 * 
 	 * @param code
-	 *            the code
-	 * @return the airline
+	 *            the IATA code
+	 * @return the airline that matches the IATA code
+	 * 	if no match was found null is returned
 	 */
-	static Airline getAirline(String code)
-	{
+	static Airline getAirline(String code) {
+
 		Iterator<Airline> iter = Arrays.asList(Airline.values()).iterator();
 		Airline al = null;
 		while (iter.hasNext())
@@ -76,13 +78,13 @@ public enum Airline {
 		return null;
 	}
 
-	/** The code. */
+	/** The airline's IATA code. */
 	private String code;
 
-	/** The name. */
+	/** The airline's common name. */
 	private String name;
 
-	/** The registered. */
+	/** The registered objects owned by the airline. */
 	LinkedList<Airplane> airplanes;
 	LinkedList<Hangar> hangars;
 	LinkedList<Gate> gates;
@@ -95,10 +97,12 @@ public enum Airline {
 	 * @param name
 	 *            the name
 	 */
-	Airline(String code, String name)
-	{
+	Airline(String code, String name) {
 		this.code = code;
 		this.name = name;
+		airplanes = new LinkedList<Airplane>();
+		hangars = new LinkedList<Hangar>();
+		gates = new LinkedList<Gate>();
 	}
 
 	/**
@@ -106,8 +110,7 @@ public enum Airline {
 	 * 
 	 * @return the code
 	 */
-	public String getCode()
-	{
+	public String getCode() {
 		return code;
 	}
 
@@ -116,8 +119,7 @@ public enum Airline {
 	 * 
 	 * @return the name
 	 */
-	public String getName()
-	{
+	public String getName() {
 		return name;
 	}
 
@@ -126,16 +128,13 @@ public enum Airline {
 	 * 
 	 * @return the register
 	 */
-	LinkedList<Airplane> getPlanes()
-	{
+	LinkedList<Airplane> getPlanes() {
 		return this.airplanes;
 	}
-	LinkedList<Hangar> getHangars()
-	{
+	LinkedList<Hangar> getHangars() {
 		return this.hangars;
 	}
-	LinkedList<Gate> getGates()
-	{
+	LinkedList<Gate> getGates() {
 		return this.gates;
 	}
 
@@ -145,29 +144,37 @@ public enum Airline {
 	 * @param ap
 	 *            the ap
 	 */
-	void register(Object obj)
-	{
+	void register(Object obj) {
 		if (obj instanceof Airplane)
-//			this.airplanes.add(((Airplane)obj).getId(), (Airplane) obj);
+			this.airplanes.add(((Airplane)obj).getId(), (Airplane) obj);
 		if (obj instanceof Gate)
 			this.gates.add((Gate) obj);
 		if (obj instanceof Hangar)
 			this.hangars.add((Hangar) obj);
 	}
-
-	public static Airline getRandom()
-	{
-		return Airline.values()[0];
-		//return Airline.values()[new Random().nextInt()];
+	
+	void clearRegister() {
+		this.airplanes.clear();
+		this.gates.clear();
+		this.hangars.clear();
 	}
 
-	public Hangar getHangar()
-	{
-		return this.hangars.get(new Random().nextInt()%hangars.size());
+	public static Airline getRandom() {
+		// TODO Auto-generated method stub
+		Airline[] airlines = Airline.values().clone();
+		if (airlines.length == 0) return null;
+		return airlines[Math.abs(new Random().nextInt()%airlines.length)];
 	}
 
-	public Gate getGate()
-	{
-		return this.gates.get(new Random().nextInt()%gates.size());
+	public Hangar getHangar() {
+		// TODO Auto-generated method stub
+		if (this.hangars.isEmpty()) return null;
+		return this.hangars.get((new Random().nextInt()%hangars.size()));
+	}
+
+	public Gate getGate() {
+		// TODO Auto-generated method stub
+		if (this.gates.isEmpty()) return null;
+		return this.gates.get((new Random().nextInt()%gates.size()));
 	}
 }

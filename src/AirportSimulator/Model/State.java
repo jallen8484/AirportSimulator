@@ -1,11 +1,11 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
 
@@ -13,14 +13,13 @@ import java.util.LinkedList;
 
 import AirportSimulator.Model.VehicleState.Category;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Interface State.
- * @author Joshua Charles
  * @author Jeremy Allen
- * @version 5.0
+ * @version 3.1
  */
-public interface State
-{
+public interface State {
 
 	/**
 	 * Gets the category.
@@ -36,6 +35,11 @@ public interface State
 	 */
 	public LinkedList<Vehicle> getGoal();
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see AirportSimulator.Model.State#getName()
+	 */
 	/**
 	 * Gets the name.
 	 * 

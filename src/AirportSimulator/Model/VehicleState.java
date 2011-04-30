@@ -1,11 +1,11 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
 
@@ -15,7 +15,7 @@ import java.util.LinkedList;
 /**
  * The Class VehicleState.
  * @author Jeremy Allen
- * @version 5.0
+ * @version 3.1
  */
 public abstract class VehicleState implements State {
 
@@ -45,11 +45,11 @@ public abstract class VehicleState implements State {
 	 * Instantiates a new vehicle state.
 	 * 
 	 * @param s
-	 *            the s
+	 *            the name of the state
 	 * @param c
-	 *            the c
+	 *            the category to which the state belongs
 	 * @param g
-	 *            the g
+	 *            the goal destination for the vehicle
 	 */
 	public VehicleState(String s, Category c, VehicleContainer g) {
 		this.name = s;
@@ -62,7 +62,7 @@ public abstract class VehicleState implements State {
 	 * 
 	 * @see AirportSimulator.Model.State#getCategory()
 	 */
-	@Override
+
 	public Category getCategory() {
 		return cat;
 	}
@@ -72,7 +72,6 @@ public abstract class VehicleState implements State {
 	 * 
 	 * @see AirportSimulator.Model.State#getGoal()
 	 */
-	@Override
 	public VehicleContainer getGoal() {
 		return goal;
 	}
@@ -111,7 +110,6 @@ public abstract class VehicleState implements State {
 	 * @param c
 	 *            the new category
 	 */
-	@Override
 	public void setCategory(Category c) {
 		this.cat = c;
 	}
@@ -124,7 +122,7 @@ public abstract class VehicleState implements State {
 	@Override
 	public void setGoal(LinkedList<Vehicle> goal) {
 		// TODO Auto-generated method stub
-		this.goal = (VehicleContainer) goal;
+		this.goal = (VehicleContainer)(LinkedList<Vehicle>) goal;
 	}
 
 	/*

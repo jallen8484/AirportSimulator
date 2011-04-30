@@ -1,14 +1,15 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
 
+// TODO: Auto-generated Javadoc
 /**
  * The listener interface for receiving model events. The class that is
  * interested in processing a model event implements this interface, and the
@@ -19,10 +20,10 @@ package AirportSimulator.Model;
  * 
  * @see ModelEvent
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
-public interface ModelListener
-{
+public interface ModelListener {
+
 	/**
 	 * Model changed.
 	 * 

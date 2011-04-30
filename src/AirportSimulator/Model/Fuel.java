@@ -1,11 +1,11 @@
 /**
  * @project AirportSimulator
- * @package AirportSimulator.Model
+ * @package airport.model
  * @author Brian Bagley
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 5.0
+ * @version 3.1
  */
 package AirportSimulator.Model;
 
@@ -14,7 +14,7 @@ package AirportSimulator.Model;
  * The Class Fuel.
  *
  * @author Jeremy Allen
- * @version 5.0
+ * @version 3.1
  */
 public class Fuel {
 

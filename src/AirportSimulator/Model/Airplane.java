@@ -17,7 +17,7 @@ import java.util.Random;
  * @author Jeremy Allen
  * @version 5.0
  */
-public class Airplane //extends AirportVehicle
+public class Airplane extends AirportVehicle
 {
 	/** The aid. */
 	public int aid;			// airplane id
@@ -108,17 +108,26 @@ public class Airplane //extends AirportVehicle
 	 * @param ac
 	 *            the ac
 	 */
-//	public Airplane(int i, Airline al, FuelTank f, AirplaneState st, AirplaneContainer ac)
-//	{
-//		super(i, al, f, st, ac);
-//	}
+	public Airplane(int i, Airline al, FuelTank f, AirplaneState st, AirplaneContainer ac)
+	{
+		super(i, al, f, st, ac);
+	}
 
-//	static Airline al = Airline.getRandom();
+	static Airline al = Airline.getRandom();
 	
-//	public Airplane()
-//	{
-//		super(new Random().nextInt(), al, new FuelTank(new Random().nextDouble()%100), AirplaneState.WAITINHANGAR, al.getHangar());
-//	}
+	public Airplane(int seed)
+	{
+		super(new Random(seed).nextInt(), al, new FuelTank(new Random(seed).nextDouble()%100), AirplaneState.WAITINHANGAR, al.getHangar());
+	}
+	public Airplane()
+	{
+		super(0, null, null, null, null);
+		this.aid = 0;		// set airplane id
+		this.rat = 0;		// set raw arrival time
+		this.cat = 0;	// set tick arrival time
+		this.state = 0;		// set state to transit
+		this.fuel = 0;
+	}
 
 	/*
 	 * (non-Javadoc)
@@ -132,9 +141,9 @@ public class Airplane //extends AirportVehicle
 	 * 
 	 * @return the cat
 	 */
-//	public int getCat() { return cat; }
+public int getCat() { return cat; }
 	
-//	public int getId() { return aid; }
+public int getId() { return aid; }
 
 	/**
 	 * Refuel.
@@ -142,7 +151,7 @@ public class Airplane //extends AirportVehicle
 	 * @param fl
 	 *            the fl
 	 */
-//	public void refuel(FuelLevel fl) { tank.setLevel(fl); }
+public void refuel(FuelLevel fl) { tank.setLevel(fl); }
 	
 
 }
