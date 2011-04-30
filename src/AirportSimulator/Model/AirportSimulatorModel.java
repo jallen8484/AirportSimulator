@@ -390,7 +390,8 @@ public class AirportSimulatorModel extends AbstractModel
 	/**
 	 * The Enum State.
 	 */
-	public enum State {
+	public enum State
+	{
 
 		/** The PAUSED. */
 		PAUSED("Paused"),
@@ -466,14 +467,14 @@ public class AirportSimulatorModel extends AbstractModel
 
 	}
 	
-	
-	
+
 	/**
 	 * Gets the queue landing pattern.
 	 * 
 	 * @return the queueLandingPattern
 	 */
-	public LinkedList<Airplane> getQueueLandingPattern() {
+	public LinkedList<Airplane> getQueueLandingPattern()
+	{
 		return queueLandingPattern;
 	}
 	
@@ -483,7 +484,8 @@ public class AirportSimulatorModel extends AbstractModel
 	 * @param queueLandingPattern
 	 *            the queueLandingPattern to set
 	 */
-	public void setQueueLandingPattern(LinkedList<Airplane> queueLandingPattern) {
+	public void setQueueLandingPattern(LinkedList<Airplane> queueLandingPattern)
+	{
 		this.queueLandingPattern = queueLandingPattern;
 	}
 	

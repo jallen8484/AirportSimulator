@@ -16,7 +16,7 @@ package AirportSimulator.Model;
  * @version 5.0
 */
 @SuppressWarnings("serial")
-public class AirportEvent extends ModelEvent
+public class AirportEvent //extends ModelEvent
 {
 	/** The eventtype. */
 	public int eventtype;		// 0 - airplane contacting tower to enter landing pattern
@@ -100,8 +100,9 @@ public class AirportEvent extends ModelEvent
 	 * @param msg
 	 *            the msg
 	 */
-	public AirportEvent(Object ap, String msg) {
-		super(ap, ((Airplane) ap).getId(), msg);
+	public AirportEvent(Object ap, String msg)
+	{
+//		super(ap, ((Airplane) ap).getId(), msg);
 		// notifyChanged(((Airplane) ap).id(), Event.getEvent(msg));
 	}
 

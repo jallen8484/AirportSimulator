@@ -149,8 +149,8 @@ public class FuelTank {
 		FuelTank miniTank = new FuelTank(2); // 2 Gallon tank
 		FuelTank fiveGalTank = new FuelTank(5);
 		FuelTank largeFuelTank = new FuelTank(TankSize.LARGE);
-		Airplane smallPlane = new Airplane(new Random().nextInt(), null,
-				largeFuelTank, null, null);
+//		Airplane smallPlane = new Airplane(new Random().nextInt(), null,
+//				largeFuelTank, null, null);
 		/*
 		 * All Tanks are empty, you must either fill() or add(Fuel f)
 		 */
@@ -171,7 +171,7 @@ public class FuelTank {
 			largeFuelTank.fill(normalReserve);
 			fiveGalTank.fill(largeFuelTank);
 			miniTank.fill(largeFuelTank);
-			smallPlane.getTank().fill(largeFuelTank);
+//			smallPlane.getTank().fill(largeFuelTank);
 
 		} catch (FuelTankException e) {
 			// TODO Auto-generated catch block
@@ -180,7 +180,7 @@ public class FuelTank {
 			assert (!largeFuelTank.isEmpty());
 			assert (!normalReserve.isEmpty());
 			assert (miniTank.isFull());
-			assert (smallPlane.getTank().isFull());
+//			assert (smallPlane.getTank().isFull());
 		}
 
 	}

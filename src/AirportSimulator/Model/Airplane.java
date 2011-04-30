@@ -17,7 +17,7 @@ import java.util.Random;
  * @author Jeremy Allen
  * @version 5.0
  */
-public class Airplane extends AirportVehicle
+public class Airplane //extends AirportVehicle
 {
 	/** The aid. */
 	public int aid;			// airplane id
@@ -86,6 +86,10 @@ public class Airplane extends AirportVehicle
 	public int dtwdts;		// taxiway departure time stamp
 
 	
+	
+	
+	
+	
 //***********************************************	
 // below created and added by Jeremy Allen
 //***********************************************	
@@ -104,41 +108,33 @@ public class Airplane extends AirportVehicle
 	 * @param ac
 	 *            the ac
 	 */
-	public Airplane(int i, Airline al, FuelTank f, AirplaneState st,
-			AirplaneContainer ac) {
-		// TODO Auto-generated constructor stub
-		super(i, al, f, st, ac);
-	}
+//	public Airplane(int i, Airline al, FuelTank f, AirplaneState st, AirplaneContainer ac)
+//	{
+//		super(i, al, f, st, ac);
+//	}
 
-	static Airline al = Airline.getRandom();
-	public Airplane() {
-		super(new Random().nextInt(), al, new FuelTank(new Random().nextDouble()%100), AirplaneState.WAITINHANGAR, al.getHangar());
-	}
+//	static Airline al = Airline.getRandom();
+	
+//	public Airplane()
+//	{
+//		super(new Random().nextInt(), al, new FuelTank(new Random().nextDouble()%100), AirplaneState.WAITINHANGAR, al.getHangar());
+//	}
 
 	/*
 	 * (non-Javadoc)
 	 * 
 	 * @see AirportSimulator.Model.AirportVehicle#run()
 	 */
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-
-	}
+//	public void run(){}
 
 	/**
 	 * Gets the cat.
 	 * 
 	 * @return the cat
 	 */
-	public int getCat() {
-		// TODO Auto-generated method stub
-		return cat;
-	}
-	public int getId() {
-		// TODO Auto-generated method stub
-		return aid;
-	}
+//	public int getCat() { return cat; }
+	
+//	public int getId() { return aid; }
 
 	/**
 	 * Refuel.
@@ -146,13 +142,7 @@ public class Airplane extends AirportVehicle
 	 * @param fl
 	 *            the fl
 	 */
-	public void refuel(FuelLevel fl) {
-		// TODO Auto-generated method stub
-		tank.setLevel(fl);
-	}
+//	public void refuel(FuelLevel fl) { tank.setLevel(fl); }
 	
-	
-	
-	
-	
+
 }

@@ -16,7 +16,8 @@ import java.util.Random;
 
 /**
  * The Enum Airline.
-  * @author Jeremy Allen
+ * @author Joshua Charles
+ * @author Jeremy Allen
  * @version 5.0
 */
 public enum Airline {
@@ -64,8 +65,8 @@ public enum Airline {
 	 *            the code
 	 * @return the airline
 	 */
-	static Airline getAirline(String code) {
-
+	static Airline getAirline(String code)
+	{
 		Iterator<Airline> iter = Arrays.asList(Airline.values()).iterator();
 		Airline al = null;
 		while (iter.hasNext())
@@ -94,7 +95,8 @@ public enum Airline {
 	 * @param name
 	 *            the name
 	 */
-	Airline(String code, String name) {
+	Airline(String code, String name)
+	{
 		this.code = code;
 		this.name = name;
 	}
@@ -104,7 +106,8 @@ public enum Airline {
 	 * 
 	 * @return the code
 	 */
-	public String getCode() {
+	public String getCode()
+	{
 		return code;
 	}
 
@@ -113,7 +116,8 @@ public enum Airline {
 	 * 
 	 * @return the name
 	 */
-	public String getName() {
+	public String getName()
+	{
 		return name;
 	}
 
@@ -122,13 +126,16 @@ public enum Airline {
 	 * 
 	 * @return the register
 	 */
-	LinkedList<Airplane> getPlanes() {
+	LinkedList<Airplane> getPlanes()
+	{
 		return this.airplanes;
 	}
-	LinkedList<Hangar> getHangars() {
+	LinkedList<Hangar> getHangars()
+	{
 		return this.hangars;
 	}
-	LinkedList<Gate> getGates() {
+	LinkedList<Gate> getGates()
+	{
 		return this.gates;
 	}
 
@@ -138,27 +145,29 @@ public enum Airline {
 	 * @param ap
 	 *            the ap
 	 */
-	void register(Object obj) {
+	void register(Object obj)
+	{
 		if (obj instanceof Airplane)
-			this.airplanes.add(((Airplane)obj).getId(), (Airplane) obj);
+//			this.airplanes.add(((Airplane)obj).getId(), (Airplane) obj);
 		if (obj instanceof Gate)
 			this.gates.add((Gate) obj);
 		if (obj instanceof Hangar)
 			this.hangars.add((Hangar) obj);
 	}
 
-	public static Airline getRandom() {
-		// TODO Auto-generated method stub
-		return Airline.values()[new Random().nextInt()];
+	public static Airline getRandom()
+	{
+		return Airline.values()[0];
+		//return Airline.values()[new Random().nextInt()];
 	}
 
-	public Hangar getHangar() {
-		// TODO Auto-generated method stub
+	public Hangar getHangar()
+	{
 		return this.hangars.get(new Random().nextInt()%hangars.size());
 	}
 
-	public Gate getGate() {
-		// TODO Auto-generated method stub
+	public Gate getGate()
+	{
 		return this.gates.get(new Random().nextInt()%gates.size());
 	}
 }
