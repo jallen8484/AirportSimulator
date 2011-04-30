@@ -1,0 +1,74 @@
+[33mcommit deb0fb4ca06cea7cfce652bbb77a4ec9d46119b1[m
+Author: Jeremy Allen <jma.8484@gmail.com>
+Date:   Thu Apr 28 16:02:15 2011 -0500
+
+    v3 removed all extraneous reconstrutables, eg: javadoc, maven, vpproject, etc...
+
+[1mdiff --git a/airportSimulator.rar b/airportSimulator.rar[m
+[1mdeleted file mode 100644[m
+[1mindex 5631d3f..0000000[m
+Binary files a/airportSimulator.rar and /dev/null differ
+[1mdiff --git a/airportSimulator.zip b/airportSimulator.zip[m
+[1mdeleted file mode 100644[m
+[1mindex e038e39..0000000[m
+Binary files a/airportSimulator.zip and /dev/null differ
+[1mdiff --git a/airportSimulator/README b/airportSimulator/README[m
+[1mdeleted file mode 100644[m
+[1mindex 3fef4de..0000000[m
+[1m--- a/airportSimulator/README[m
+[1m+++ /dev/null[m
+[36m@@ -1,20 +0,0 @@[m
+[31m-@project AirportSimulator[m
+[31m-@author Brian Bagley[m
+[31m-@author David Cook[m
+[31m-@author Jeremy Allen[m
+[31m-@author Joshua Charles[m
+[31m-@version 3.0[m
+[31m-[m
+[31m-@output[m
+[31m-aid      rat               cat               [m
+[31m----------------------------------------------[m
+[31m-1        2.15139           22                [m
+[31m-2        5.46307           55                [m
+[31m-3        7.76437           78                [m
+[31m-4        7.81226           78                [m
+[31m-5        7.84351           78                [m
+[31m-eve      aid      cat               [m
+[31m----------------------------------------------[m
+[31m-Exception in thread "Thread-3" java.lang.NullPointerException[m
+[31m-	at airportSimulator.model.AirportModel$AirportTowerThread.run(AirportModel.java:48)[m
+[31m-	at java.lang.Thread.run(Unknown Source)[m
+[1mdiff --git a/airportSimulator/airportSimulator/controller/AbstractController.java b/airportSimulator/airportSimulator/controller/AbstractController.java[m
+[1mdeleted file mode 100644[m
+[1mindex 1717044..0000000[m
+[1m--- a/airportSimulator/airportSimulator/controller/AbstractController.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,27 +0,0 @@[m
+[31m-/**[m
+[31m- * @project AirportSimulator[m
+[31m- * @package AirportSimulator.Controller[m
+[31m- * @author Brian Bagley[m
+[31m- * @author David Cook[m
+[31m- * @author Jeremy Allen[m
+[31m- * @author Joshua Charles[m
+[31m- * @version 3.0[m
+[31m- */[m
+[31m-package airportSimulator.controller;[m
+[31m-[m
+[31m-import airportSimulator.model.Model;[m
+[31m-import airportSimulator.view.View;[m
+[31m-[m
+[31m-/**[m
+[31m- * AbstractController Class[m
+[31m- * @author Joshua Charles[m
+[31m- * @version 3.0[m
+[31m- */[m
+[31m-public abstract class AbstractController implements Controller {[m
+[31m-	private Model model;[m
+[31m-	private View view;[m
+[31m-	public Model getModel() {	return model;	}[m
+[31m-	public View getView() {	return view;	}[m
+[31m-	public void setModel(Model model) {	this.model = model;	}[m
+[31m-	public void setView(View view) {	this.view = view;	}[m
+[31m-}[m
+[1mdiff --git a/airportSimulator/airportSimulator/controller/AirportTower.java b/airp
