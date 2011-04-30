@@ -82,7 +82,7 @@ public class AirportEvent extends ModelEvent {
 	private static final long serialVersionUID = 7116952084895363025L;
 
 	/** The airplane which created the event. */
-	Airplane ap;// a reference to the airplane this event is associated with if applicable
+	public Airplane ap;// a reference to the airplane this event is associated with if applicable
 
 
 	/** The msg. */
@@ -93,13 +93,18 @@ public class AirportEvent extends ModelEvent {
 	 * 
 	 * @param ap
 	 *            the ap
+	 * @param e 
 	 * @param msg
 	 *            the msg
 	 */
-	public AirportEvent(Object ap, String msg) {
-		super(ap, ((Airplane) ap).getId(), msg);
+	public AirportEvent(Object ap, int e, String msg) {
+		super(ap, e, msg);
 		// notifyChanged(((Airplane) ap).id(), Event.getEvent(msg));
+		this.ap = (Airplane) ap;
+		this.eventtype = e;
+		this.msg = msg;
 	}
+
 
 	/**
 	 * Gets the msg.

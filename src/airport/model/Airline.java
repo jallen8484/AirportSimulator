@@ -9,6 +9,7 @@
  */
 package airport.model;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -99,6 +100,9 @@ public enum Airline {
 	Airline(String code, String name) {
 		this.code = code;
 		this.name = name;
+		airplanes = new LinkedList<Airplane>();
+		hangars = new LinkedList<Hangar>();
+		gates = new LinkedList<Gate>();
 	}
 
 	/**
@@ -157,16 +161,20 @@ public enum Airline {
 
 	public static Airline getRandom() {
 		// TODO Auto-generated method stub
-		return Airline.values()[new Random().nextInt()];
+		Airline[] airlines = Airline.values().clone();
+		if (airlines.length == 0) return null;
+		return airlines[Math.abs(new Random().nextInt()%airlines.length)];
 	}
 
 	public Hangar getHangar() {
 		// TODO Auto-generated method stub
-		return this.hangars.get(new Random().nextInt()%hangars.size());
+		if (this.hangars.isEmpty()) return null;
+		return this.hangars.get((new Random().nextInt()%hangars.size()));
 	}
 
 	public Gate getGate() {
 		// TODO Auto-generated method stub
-		return this.gates.get(new Random().nextInt()%gates.size());
+		if (this.gates.isEmpty()) return null;
+		return this.gates.get((new Random().nextInt()%gates.size()));
 	}
 }

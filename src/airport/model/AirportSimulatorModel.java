@@ -1,4 +1,4 @@
-package AirportSimulator.Model;
+package airport.model;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -32,10 +32,7 @@ public class AirportSimulatorModel extends AbstractModel
     	Iterator<Airplane> it = listAirplanes.iterator();
     	while (it.hasNext())
     	{
-    		AirportEvent temp = new AirportEvent();
-    		temp.eventtype = 0;
-    		temp.ap = it.next();
-    		queueAirportEvent.addLast(temp);
+    		queueAirportEvent.addLast(new AirportEvent(it.next(), 0, ""));
     	}
 
     	// event queue should now hold all of the generated airplanes as arrival events

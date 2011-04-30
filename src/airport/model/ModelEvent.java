@@ -49,7 +49,7 @@ public class ModelEvent extends ActionEvent {
 		this.obj = obj;
 		this.id = id;
 		this.msg = msg;
-		this.amt = 0;
+		this.command = 0;
 	}
 
 	/**
@@ -69,7 +69,7 @@ public class ModelEvent extends ActionEvent {
 		this.obj = obj;
 		this.id = id;
 		this.msg = msg;
-		this.amt = amt;
+		this.command = amt;
 	}
 
 	/**
@@ -90,13 +90,14 @@ public class ModelEvent extends ActionEvent {
 		super(arg0, arg1, arg2, arg3, arg4);
 	}
 
+
 	/**
 	 * Gets the amount.
 	 * 
 	 * @return the amount
 	 */
 	public int amount() {
-		return amt;
+		return command;
 	}
 
 	/**

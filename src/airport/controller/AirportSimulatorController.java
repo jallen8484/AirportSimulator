@@ -1,48 +1,46 @@
-package AirportSimulator.Controller;
+package airport.controller;
 
-import AirportSimulator.Model.AirportSimulatorModel;
-import AirportSimulator.View.AirplaneListView;
-import AirportSimulator.View.AirportSimulatorView;
-import AirportSimulator.View.JFrameView;
+import airport.model.AirportSimulatorModel;
+import airport.view.*;
 
 public class AirportSimulatorController extends AbstractController
 {
 	public AirportSimulatorController()
 	{
-		SetModel(new AirportSimulatorModel());
-		SetView(new AirportSimulatorView((AirportSimulatorModel)GetModel(), this));
-		((JFrameView)GetView()).setVisible(true);
+		setModel(new AirportSimulatorModel());
+		setView(new AirportSimulatorView((AirportSimulatorModel)getModel(), this));
+		((JFrameView)getView()).setVisible(true);
 	}
 
 	public void SimulatorStart(int listsize, double arrivalrate)
 	{
-		((AirportSimulatorModel)GetModel()).StartSimulator(listsize, arrivalrate);
+		((AirportSimulatorModel)getModel()).StartSimulator(listsize, arrivalrate);
 	}
 
 	public void SimulatorStop()
 	{
-		((AirportSimulatorModel)GetModel()).StopSimulator();
+		((AirportSimulatorModel)getModel()).StopSimulator();
 	}
 
 	public void SimulatorPause()
 	{
-		((AirportSimulatorModel)GetModel()).PauseSimulator();
+		((AirportSimulatorModel)getModel()).PauseSimulator();
 	}
 
 	public void SimulatorResume()
 	{
-		((AirportSimulatorModel)GetModel()).ResumeSimulator();
+		((AirportSimulatorModel)getModel()).ResumeSimulator();
 	}
 
 	public void SimulatorSpeedChange(int current)
 	{
-		((AirportSimulatorModel)GetModel()).SpeedChangeSimulator(current);
+		((AirportSimulatorModel)getModel()).SpeedChangeSimulator(current);
 	}
 	
 	public void SimulatorAirplaneMonitor()
 	{
 		AirplaneListView airplanelistview = new AirplaneListView(
-				(AirportSimulatorModel)GetModel(),
+				(AirportSimulatorModel)getModel(),
 				this);
 		airplanelistview.setVisible(true);
 	}

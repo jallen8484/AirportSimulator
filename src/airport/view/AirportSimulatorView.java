@@ -1,4 +1,4 @@
-package AirportSimulator.View;
+package airport.view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,9 +12,9 @@ import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import AirportSimulator.Controller.AirportSimulatorController;
-import AirportSimulator.Model.AirportSimulatorModel;
-import AirportSimulator.Model.ModelEvent;
+import airport.controller.AirportSimulatorController;
+import airport.model.AirportSimulatorModel;
+import airport.model.ModelEvent;
 
 @SuppressWarnings("serial")
 public class AirportSimulatorView extends JFrameView
@@ -278,7 +278,7 @@ public class AirportSimulatorView extends JFrameView
 					{ }
 
 				// execute start method of controller
-				((AirportSimulatorController)GetController()).SimulatorStart(
+				((AirportSimulatorController)getController()).SimulatorStart(
 						Integer.parseInt(jTextFieldNumberAirplanesToGenerate.getText()),
 						Double.parseDouble(jTextFieldAirplaneArrivalRate.getText()));
 			}
@@ -286,25 +286,25 @@ public class AirportSimulatorView extends JFrameView
 			if ( e.getActionCommand() == STOPSIM)
 			{
 				// execute stop method of controller
-				((AirportSimulatorController)GetController()).SimulatorStop();
+				((AirportSimulatorController)getController()).SimulatorStop();
 			}
 
 			if ( e.getActionCommand() == PAUSESIM)
 			{
 				// execute pause method of controller
-				((AirportSimulatorController)GetController()).SimulatorPause();
+				((AirportSimulatorController)getController()).SimulatorPause();
 			}
 
 			if ( e.getActionCommand() == RESUMESIM)
 			{
 				// execute resume method of controller
-				((AirportSimulatorController)GetController()).SimulatorResume();
+				((AirportSimulatorController)getController()).SimulatorResume();
 			}
 			
 			if ( e.getActionCommand() == "Airplanes")
 			{
 				// execute resume method of controller
-				((AirportSimulatorController)GetController()).SimulatorAirplaneMonitor();
+				((AirportSimulatorController)getController()).SimulatorAirplaneMonitor();
 			}
 		}
 	}
@@ -313,7 +313,7 @@ public class AirportSimulatorView extends JFrameView
 	{
 		public void stateChanged(ChangeEvent e)
 		{
-			((AirportSimulatorController)GetController()).SimulatorSpeedChange(jSlider1.getValue());
+			((AirportSimulatorController)getController()).SimulatorSpeedChange(jSlider1.getValue());
 		}
 	}
 
