@@ -22,9 +22,7 @@ public abstract class AbstractModel implements Model
 	/** The listeners. */
 	private ArrayList<ModelListener> listeners = new ArrayList<ModelListener>(5);
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see
 	 * AirportSimulator.Model.Model#notifyChanged(AirportSimulator.Model.ModelEvent
 	 * )

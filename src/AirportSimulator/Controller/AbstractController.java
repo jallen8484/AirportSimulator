@@ -25,9 +25,7 @@ public abstract class AbstractController implements Controller
 	/** The model. */
 	private Model model;
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see
 	 * AirportSimulator.Controller.Controller#setModel(AirportSimulator.Model
 	 * .Model)
@@ -37,9 +35,7 @@ public abstract class AbstractController implements Controller
 		this.model = model;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see AirportSimulator.Controller.Controller#getModel()
 	 */
 	public Model GetModel()
@@ -47,9 +43,7 @@ public abstract class AbstractController implements Controller
 		return model;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see AirportSimulator.Controller.Controller#getView()
 	 */
 	public View GetView()
@@ -57,9 +51,7 @@ public abstract class AbstractController implements Controller
 		return view;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see
 	 * AirportSimulator.Controller.Controller#setView(AirportSimulator.View.
 	 * View)

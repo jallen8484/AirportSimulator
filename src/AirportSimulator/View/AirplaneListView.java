@@ -54,9 +54,7 @@ public class AirplaneListView extends JFrameView
         pack();
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see
 	 * AirportSimulator.Model.ModelListener#modelChanged(AirportSimulator.Model
 	 * .ModelEvent)

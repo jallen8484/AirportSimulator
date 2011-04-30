@@ -35,17 +35,17 @@ public interface Controller
 	Model GetModel();
 	
 	/**
-	 * Gets the view.
-	 * 
-	 * @return the view
-	 */
-	View GetView();
-	
-	/**
 	 * Sets the view.
 	 * 
 	 * @param view
 	 *            the new view
 	 */
 	void SetView(View view);
+	
+	/**
+	 * Gets the view.
+	 * 
+	 * @return the view
+	 */
+	View GetView();
 }

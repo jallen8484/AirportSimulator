@@ -29,7 +29,6 @@ public class ModelEvent extends ActionEvent
 	
 	
 	
-	
 //***********************************************	
 // below created and added by Jeremy Allen
 //***********************************************

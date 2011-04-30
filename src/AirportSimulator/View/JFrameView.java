@@ -52,9 +52,7 @@ public abstract class JFrameView extends JFrame implements View, ModelListener
 		((AbstractModel)model).addModelListener(this);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see AirportSimulator.View.View#GetController()
 	 */
 	public Controller GetController()
@@ -62,9 +60,7 @@ public abstract class JFrameView extends JFrame implements View, ModelListener
 		return controller;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see
 	 * AirportSimulator.View.View#SetController(AirportSimulator.Controller.
 	 * Controller)
@@ -74,9 +70,7 @@ public abstract class JFrameView extends JFrame implements View, ModelListener
 		this.controller = controller;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see AirportSimulator.View.View#GetModel()
 	 */
 	public Model GetModel()
@@ -84,9 +78,7 @@ public abstract class JFrameView extends JFrame implements View, ModelListener
 		return model;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	/**
 	 * @see AirportSimulator.View.View#SetModel(AirportSimulator.Model.Model)
 	 */
 	public void SetModel(Model model)

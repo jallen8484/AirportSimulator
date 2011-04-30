@@ -299,9 +299,7 @@ public class AirportSimulatorModel extends AbstractModel
 			speedmultiplier = speed;
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * 
+		/**
 		 * @see java.lang.Runnable#run()
 		 */
 	    public void run()
