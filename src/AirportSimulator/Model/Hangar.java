@@ -1,5 +1,9 @@
 package AirportSimulator.Model;
 
+/**
+ * @author Jeremy Allen
+ * @version 5.0
+ */
 public class Hangar extends AirplaneContainer {
 
 	public static Hangar getHangar(Airline al) {

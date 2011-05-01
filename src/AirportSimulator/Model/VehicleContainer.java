@@ -5,7 +5,7 @@
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 3.1
+ * @version 5.0
  */
 package AirportSimulator.Model;
 
@@ -15,7 +15,7 @@ import java.util.LinkedList;
 /**
  * The Class VehicleContainer.
  * @author Jeremy Allen
- * @version 3.1
+ * @version 5.0
  */
 public abstract class VehicleContainer extends LinkedList<Vehicle> {
 

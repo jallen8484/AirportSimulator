@@ -5,7 +5,7 @@
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 3.1
+ * @version 5.0
  */
 package AirportSimulator.Model;
 
@@ -20,7 +20,7 @@ package AirportSimulator.Model;
  * 
  * @see ModelEvent
  * @author Joshua Charles
- * @version 3.1
+ * @version 5.0
  */
 public interface ModelListener {
 

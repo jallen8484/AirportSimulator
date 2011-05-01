@@ -5,7 +5,7 @@
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 3.1
+ * @version 5.0
  */
 package AirportSimulator.Model;
 
@@ -19,7 +19,7 @@ import java.util.Random;
 /**
  * The Enum Airline.
   * @author Jeremy Allen
- * @version 3.1
+ * @version 5.0
 */
 public enum Airline {
 

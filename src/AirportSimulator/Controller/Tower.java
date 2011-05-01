@@ -5,7 +5,7 @@
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 3.1
+ * @version 5.0
  */
 package AirportSimulator.Controller;
 
@@ -21,7 +21,7 @@ import AirportSimulator.View.*;
  * The Class AirportTower.
  * @author Joshua Charles
  * @author Jeremy Allen
- * @version 3.1
+ * @version 5.0
  */
 public final class Tower extends AbstractController {
 

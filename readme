@@ -1,0 +1,181 @@
+Merged v5 and v3.4 into master
+4-30-2011 : 7:00pm : Jeremy Allen
+	Test: Run AirportView with 50 planes at .95 arrival rate
+	Issue: Some planes are assigned to arrive at the same time.  This shouldn't be a problem to generate two planes in one tick.
+	We need to force no two planes to arrive, or allow for handling multiple planes in one tick.  After the first instance of two planes
+	assigned the same arrival time, one plane arrives, and no other planes on the list arrive as listed.
+	Output:
+	aid      rat               cat               
+---------------------------------------------
+1        0.29829           3                 
+2        0.50295           5                 
+3        1.83211           18                
+4        2.36852           24                
+5        3.01608           30                
+6        4.63845           46                
+7        4.84365           48                
+8        5.43961           54                
+9        5.60064           56                
+10       6.03139           60                
+11       6.40231           64                
+12       7.36380           74                
+13       7.58422           76                
+14       7.64229           76                
+15       8.88757           89                
+16       10.02324          100               
+17       10.49182          105               
+18       11.31450          113               
+19       12.43355          124               
+20       13.29770          133               
+21       14.31140          143               
+22       14.49001          145               
+23       14.68496          147               
+24       14.74212          147               
+25       15.36139          154               
+26       15.87112          159               
+27       19.31138          193               
+28       20.32357          203               
+29       21.22229          212               
+30       21.56021          216               
+31       21.90578          219               
+32       24.49213          245               
+33       29.57267          296               
+34       29.84434          298               
+35       31.19010          312               
+36       32.28537          323               
+37       36.87220          369               
+38       38.00842          380               
+39       38.12570          381               
+40       39.47508          395               
+41       40.85868          409               
+42       41.05317          411               
+43       41.31985          413               
+44       41.34291          413               
+45       41.52093          415               
+46       43.19118          432               
+47       43.63729          436               
+48       46.33659          463               
+49       48.44635          484               
+50       51.32382          513               
+eve      aid      cat               
+---------------------------------------------
+New Plane1        3                 
+New Plane2        5                 
+New Plane3        18                
+New Plane4        24                
+New Plane5        30                
+New Plane6        46                
+New Plane7        48                
+New Plane8        54                
+New Plane9        56                
+New Plane10       60                
+New Plane11       64                
+New Plane12       74                
+New Plane13       76                
+New Plane14       76                
+New Plane15       89                
+New Plane16       100               
+New Plane17       105               
+New Plane18       113               
+New Plane19       124               
+New Plane20       133               
+New Plane21       143               
+New Plane22       145               
+New Plane23       147               
+New Plane24       147               
+New Plane25       154               
+New Plane26       159               
+New Plane27       193               
+New Plane28       203               
+New Plane29       212               
+New Plane30       216               
+New Plane31       219               
+New Plane32       245               
+New Plane33       296               
+New Plane34       298               
+New Plane35       312               
+New Plane36       323               
+New Plane37       369               
+New Plane38       380               
+New Plane39       381               
+New Plane40       395               
+New Plane41       409               
+New Plane42       411               
+New Plane43       413               
+New Plane44       413               
+New Plane45       415               
+New Plane46       432               
+New Plane47       436               
+New Plane48       463               
+New Plane49       484               
+New Plane50       513               
+clocktick 2
+clocktick 3
+airplane requeseted landing pattern at clocktick 3
+clocktick 4
+clocktick 5
+airplane requeseted landing pattern at clocktick 5
+clocktick 6
+...........
+clocktick 18
+airplane requeseted landing pattern at clocktick 18
+clocktick 19
+...........
+clocktick 24
+airplane requeseted landing pattern at clocktick 24
+clocktick 25
+...........
+clocktick 30
+airplane requeseted landing pattern at clocktick 30
+clocktick 31
+...........
+clocktick 46
+airplane requeseted landing pattern at clocktick 46
+clocktick 47
+clocktick 48
+airplane requeseted landing pattern at clocktick 48
+clocktick 49
+...........
+clocktick 54
+airplane requeseted landing pattern at clocktick 54
+clocktick 55
+clocktick 56
+airplane requeseted landing pattern at clocktick 56
+clocktick 57
+...........
+clocktick 60
+airplane requeseted landing pattern at clocktick 60
+clocktick 61
+...........
+clocktick 64
+airplane requeseted landing pattern at clocktick 64
+clocktick 65
+...........
+clocktick 74
+airplane requeseted landing pattern at clocktick 74
+clocktick 75
+clocktick 76
+airplane requeseted landing pattern at clocktick 76
+clocktick 77
+...........
+clocktick 88
+clocktick 89
+clocktick 90
+...........
+
+4-30-2011 : 6:00pm : Jeremy Allen
+	added updated classes from v3.4
+	
+4-30-2011 : 12:00pm : Josh Charles
+	Added a zip file and updated uml diagram
+
+4-30-2011 : 11:15am : Josh Charles
+	Added my class diagram to the project and updated
+
+4-30-2011 : 11:00am : Josh Charles
+	Updated files to get the bugs fixed, code now compiles and does
+	not throw any exceptions like my version 4.0.
+
+4-30-2011 : 8:00am : Josh Charles
+	merged, compiled, executed but with errors
+	still need to merge AirportSimulatorModel.java

@@ -1,5 +1,6 @@
 /**
- * 
+ * @author Jeremy Allen
+ * @version 5.0
  */
 package AirportSimulator.Model;
 
@@ -7,7 +8,7 @@ import java.util.LinkedList;
 
 /**
  * @author Jeremy Allen
- *
+ * @version 5.0
  */
 public class Taxi extends AirportVehicle {
 

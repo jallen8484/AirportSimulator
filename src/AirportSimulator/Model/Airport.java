@@ -5,7 +5,7 @@
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 3.1
+ * @version 5.0
  */
 package AirportSimulator.Model;
 
@@ -17,7 +17,7 @@ import AirportSimulator.Model.FuelTank.TankSize;
 /**
  * The Class AirportModel.
  * @author Jeremy Allen
- * @version 3.1
+ * @version 5.0
  */
 public class Airport extends AbstractModel {
 

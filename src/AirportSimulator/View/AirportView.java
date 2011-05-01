@@ -5,7 +5,7 @@
  * @author David Cook
  * @author Jeremy Allen
  * @author Joshua Charles
- * @version 3.1
+ * @version 5.0
  */
 package AirportSimulator.View;
 
@@ -23,7 +23,7 @@ import AirportSimulator.Model.*;
 /**
  * The Class AirportView.
  * @author Jeremy Allen
- * @version 3.1
+ * @version 5.0
  */
 
 public class AirportView extends JFrameView {
